@@ -24,4 +24,8 @@ a {
     color     : #000;
     background: #fba5a5;
   }
+  div {
+    display: flex;
+    flex-direction: column;
+  }
 }

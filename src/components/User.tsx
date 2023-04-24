@@ -1,6 +1,6 @@
 
 export const User = async () => {
-    await new Promise((resolve) => setTimeout(resolve, 6000))
+    await new Promise((resolve) => setTimeout(resolve, 3000))
     const response = await fetch('https://api.github.com/users/edsoncarlosdvp', {
         cache: 'no-store'
     })

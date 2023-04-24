@@ -1,7 +1,8 @@
 
+import Link from 'next/link';
 import { Suspense } from 'react';
-import { Repo } from './components/Repo';
-import { User } from './components/User';
+import { Repo } from '../components/Repo';
+import { User } from '../components/User';
 import styles from './page.module.css';
 
 export default async function Home() {
@@ -13,6 +14,8 @@ export default async function Home() {
   return (
     <div className={styles.container}>
       <h1>Home</h1>
+      <Link href="/dashboard">Dashboard</Link>
+      <Link href="/auth/siginin">Logar</Link>
       <main className={styles.main}>
         <Suspense fallback={<p>Carregando usuários...</p>}>
           {/* @ts-expect-error Async Server Component */}
